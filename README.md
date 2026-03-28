@@ -1,1 +1,1 @@
-# mini-file-upload-app
+# Mini File Upload App
