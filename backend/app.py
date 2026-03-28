@@ -47,6 +47,10 @@ def upload_file():
     
     filename = secure_filename(file.filename)
     filepath = os.path.join(UPLOAD_FOLDER, filename)
+
+    if os.path.exists(filepath):
+        return jsonify({"error": "File already exists"}), 400
+
     file.save(filepath)
 
     return jsonify({"message": "Uploaded successfully", "filename": filename})
