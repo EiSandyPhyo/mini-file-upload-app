@@ -98,4 +98,4 @@ npm run dev
 
 ## 👤 Author
 
-Sandy
+[Sandy](https://github.com/EiSandyPhyo)
